@@ -1,0 +1,46 @@
+@use "./variables.scss" as *;
+
+
+@mixin grid($columns: 2, $gap: 2rem) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+  }
+  
+  // Media Queries
+  @mixin mobile {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  
+@mixin flexCenter($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+  }
+
+  @mixin mobile {
+    @media (min-width: $mobile-breakpoint) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (min-width: $tablet-breakpoint) {
+      @content;
+    }
+  }
+
+  @mixin desktop {
+     @media (min-width: $desktop-breakpoint) and (max-width: 1920px) {
+        @content
+     }
+  
+}
