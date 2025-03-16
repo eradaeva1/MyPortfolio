@@ -8,7 +8,7 @@ function Header() {
         <nav className="nav">
           <div className="container">
           <div className="nav__left">
-          <span className="nav__title">Dev.Studio</span>
+          <span className="nav__title">dev.studio</span>
           </div>
           <div className="nav__list">
             <a href="" className="nav__item">

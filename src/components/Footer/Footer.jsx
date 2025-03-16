@@ -9,7 +9,7 @@ return (
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3 className="footer-title">Dev.Studio</h3>
+            <h3 className="footer-title">dev.studio</h3>
             <p className="footer-description">
               Creating digital experiences that matter
             </p>
