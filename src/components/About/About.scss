@@ -186,12 +186,13 @@
 //       }
 //     }
 .about-section {
-    padding-top: 6rem;
+    // padding-top: 6rem;
     padding-bottom: 6rem;
   
     &__container {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
+      padding: 1.5rem 0;
+      // padding-left: 1.5rem;
+      // padding-right: 1.5rem;
     }
   
     &__grid {
@@ -235,7 +236,7 @@
     &__content {
         width: 50%;
         position: relative;
-        z-index: 30;
+        z-index: 70;
         margin-top: -45rem;
         margin-left: 3rem;
         
@@ -258,6 +259,7 @@
       &__text {
         color: #4b5563;
         margin-bottom: 1.5rem;
+        width: 60%;
   
         @include tablet {
           font-size: 1.125rem;
@@ -268,7 +270,7 @@
         }
       }
   
-      &__skills-grid {
+      .about-section__skills-grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -279,13 +281,16 @@
         }
       }
   
-      &__skill {
+      .about-section__skill {
         background-color: #f9fafb;
         border-radius: 1rem;
-        padding: 1.5rem;
+        // padding: 1.5rem;
+        margin-top: 10rem;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
+       
   
         // img {
         //   font-size: 1.5rem;
@@ -300,12 +305,18 @@
           margin-bottom: 0.5rem;
         }
   
-        &__text {
+        .about-section__text {
           color: #4b5563;
+          background-color: #f9fafb;
+          border-radius: 1rem;
+          padding: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
       }
   
-      &__cta {
+      .about-section__cta {
         display: inline-flex;
         align-items: center;
         color: #d946ef;
