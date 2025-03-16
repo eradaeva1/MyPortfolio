@@ -33,7 +33,7 @@ function About() {
                       </p>
                     </div>
                     <div className="about-section__skill p-6 bg-gray-50 rounded-xl">
-                      <i className="fa-solid fa-database text-2xl text-fuchsia-600 mb-4"></i>
+                      <img className="fa-solid fa-database text-2xl text-fuchsia-600 mb-4"></img>
                       <h3 className="about-section__skill-title text-xl font-bold text-gray-900 mb-2">
                         Back-end
                       </h3>

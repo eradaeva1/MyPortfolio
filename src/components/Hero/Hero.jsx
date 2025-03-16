@@ -8,9 +8,9 @@ function Hero() {
           <section className="hero">
             <div className="hero__container">
               <div className="content">
-                <h1 className="content__title">Crafting Digital Experiences</h1>
+                <h1 className="content__title">Elizaveta Radaeva. </h1>
                 <p className="content__text">
-                  Full-stack developer specializing in creating memorable and performant web applications
+                  Full-stack developer specializing in creating memorable and performant web applications. Crafting Digital Experiences
                 </p>
                 <button className="btn__view">View Projects</button>
               </div>
