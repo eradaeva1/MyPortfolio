@@ -1,11 +1,11 @@
-
+import React from "react";
 import "./App.css";
-import "./components/Header/Header";
-import "./components/Hero/Hero";
-import "./components/Projects/Projects";
-import "./components/About/About";
-import "./components/Skills/Skills";
-import "./components/Socials/Socials";
+import Header from "../src/components/Header/Header";
+import Hero from "../src/components/Hero/Hero";
+import Projects from "../src/components/Projects/Projects";
+import About from "../src/components/About/About";
+import Skills from "../src/components/Skills/Skills";
+import Socials from "../src/components/Socials/Socials";
 
 
 
