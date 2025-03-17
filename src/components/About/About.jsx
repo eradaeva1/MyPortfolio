@@ -1,56 +1,140 @@
 import './About.scss';
-import myPhoto from "../../assets/images/myPhoto.jpg"
+import myPhoto from "../../assets/images/myPhoto3.jpg"
 
 
-function About() {
-    return (
-        <>
-          <section id="about" className="about-section py-24">
-            <div className="about-section__container mx-auto px-6">
-              <div className="about-section__grid md:grid-cols-2 gap-16 items-center">
-                <div className="about-section__image-container relative">
-                  <img
-                    className="about-section__image w-full h-[600px] object-cover rounded-xl"
-                    src={myPhoto}
-                    alt="professional developer portrait in modern office, dramatic lighting"
-                  />
+import React from "react";
+import "./About.scss";
+
+const About = () => {
+  return (
+    <section id="about" className="about-section">
+      <div className="container">
+        <div className="about-grid">
+          {/* Left Content */}
+          <div className="about-content">
+            <div id="about-me">
+              <h2 className="title">About Me</h2>
+              <p className="text">
+                With over 5 years of experience in web development, I specialize
+                in creating intuitive and performant web applications that solve
+                real-world problems. I'm passionate about clean code, user
+                experience, and staying current with emerging technologies.
+              </p>
+            </div>
+
+            {/* Education Section */}
+            <div id="education">
+              <h3 className="subtitle">Education</h3>
+              <div className="education-list">
+                <div className="education-item">
+                  <h4 className="degree">Master of Computer Science</h4>
+                  <p className="school">Stanford University</p>
+                  <p className="year">2020 - 2022</p>
                 </div>
-                <div className="about-section__content">
-                  <h2 className="about-section__title text-4xl font-bold text-gray-900 mb-6">
-                    About Me
-                  </h2>
-                  <p className="about-section__text text-gray-600 mb-6">
-                    With over 5 years of experience in web development, I specialize in creating beautiful, functional, and user-friendly websites that deliver results.
-                  </p>
-                  <div className="about-section__skills-grid grid grid-cols-2 gap-6 mb-8">
-                    <div className="about-section__skill p-6 bg-gray-50 rounded-xl">
-                      <img className="fa-solid fa-code text-2xl text-fuchsia-600 mb-4"></img>
-                      <h3 className="about-section__skill-title text-xl font-bold text-gray-900 mb-2">
-                        Front-end
-                      </h3>
-                      <p className="about-section__skill-text text-gray-600">
-                        React, Vue, Angular
-                      </p>
-                    </div>
-                    <div className="about-section__skill p-6 bg-gray-50 rounded-xl">
-                      <img className="fa-solid fa-database text-2xl text-fuchsia-600 mb-4"></img>
-                      <h3 className="about-section__skill-title text-xl font-bold text-gray-900 mb-2">
-                        Back-end
-                      </h3>
-                      <p className="about-section__skill-text text-gray-600">
-                        Node.js, Python, PHP
-                      </p>
-                    </div>
-                  </div>
-                  <a href="#contact" className="about-section__cta inline-flex items-center text-fuchsia-600 hover:text-fuchsia-700">
-                    Let's work together <i className="fa-solid fa-arrow-right ml-2"></i>
-                  </a>
+                <div className="education-item">
+                  <h4 className="degree">Bachelor of Software Engineering</h4>
+                  <p className="school">MIT</p>
+                  <p className="year">2016 - 2020</p>
                 </div>
               </div>
             </div>
-          </section>
-        </>
-      );
-    }
+          </div>
+
+          {/* Right Image Section */}
+          <div className="about-image">
+            <div className="image-overlay"></div>
+            <img
+              src={myPhoto}
+              alt="Professional headshot"
+              className="profile-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default About;
+
+// import { useEffect, useState } from 'react';
+// import Particles from 'react-tsparticles';
+// import { loadFull } from 'tsparticles';
+
+// const About = () => {
+//   const [isVisible, setIsVisible] = useState(false);
+
+//   const particlesInit = async (engine) => {
+//     await loadFull(engine);
+//   };
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const section = document.getElementById('about-section');
+//       const offset = section.getBoundingClientRect().top;
+//       const screenHeight = window.innerHeight;
+
+//       if (offset < screenHeight * 0.8) {
+//         setIsVisible(true);
+//       }
+//     };
+
+//     window.addEventListener('scroll', handleScroll);
+//     return () => window.removeEventListener('scroll', handleScroll);
+//   }, []);
+
+//   return (
+//     <section id="about-section" className={`about-container ${isVisible ? 'about-visible' : ''}`}>
+//       <Particles
+//         id="tsparticles"
+//         init={particlesInit}
+//         options={{
+//           background: {
+//             color: 'transparent',
+//           },
+//           particles: {
+//             number: { value: 80 },
+//             size: { value: 3 },
+//             move: { speed: 1 },
+//             opacity: { value: 0.3 },
+//             color: { value: '#d946ef' },
+//             line_linked: {
+//               enable: true,
+//               color: '#d946ef',
+//               opacity: 0.2,
+//             },
+//           },
+//         }}
+//       />
+//       <div className="about-content">
+//         <div className="about-image-frame">
+//           <div className="about-image-overlay"></div>
+//           <img className="about-photo" src={myPhoto} alt="Professional developer portrait" />
+//         </div>
+//         <div className="about-text-content">
+//           <h2 className="about-title">About Me</h2>
+//           <p className="about-description">
+//             I’m a Software Engineer with a passion for building scalable and user-focused applications. With a Software Engineering Diploma from BrainStation and education from the University of Toronto, I specialize in React, Node.js, MySQL, and SCSS.
+//           </p>
+//           <div className="about-skills-grid">
+//             <div className="about-skill-card">
+//               <i className="fa-solid fa-code about-icon"></i>
+//               <h3 className="about-skill-title">Experience</h3>
+//               <p className="about-skill-text">Software Engineering</p>
+//             </div>
+//             <div className="about-skill-card">
+//               <i className="fa-solid fa-database about-icon"></i>
+//               <h3 className="about-skill-title">Education</h3>
+//               <p className="about-skill-text">BrainStation, University of Toronto</p>
+//             </div>
+//           </div>
+//           <a href="#contact" className="about-cta">
+//             Let's work together <i className="fa-solid fa-arrow-right ml-2"></i>
+//           </a>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default About;
