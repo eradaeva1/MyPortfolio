@@ -26,15 +26,21 @@ const About = () => {
             <div id="education">
               <h3 className="subtitle">Education</h3>
               <div className="education-list">
+             
                 <div className="education-item">
-                  <h4 className="degree">Master of Computer Science</h4>
-                  <p className="school">Stanford University</p>
-                  <p className="year">2020 - 2022</p>
+                  <h4 className="degree">Diploma, Software Engineering</h4>
+                  <p className="school">BrainStation</p>
+                  <p className="year">2024 - 2025</p>
                 </div>
                 <div className="education-item">
-                  <h4 className="degree">Bachelor of Software Engineering</h4>
-                  <p className="school">MIT</p>
-                  <p className="year">2016 - 2020</p>
+                  <h4 className="degree">Certificate, Machine Learning Software</h4>
+                  <p className="school">University of Toronto</p>
+                  <p className="year">2025</p>
+                </div>
+                <div className="education-item">
+                  <h4 className="degree">BBA, Bachelor of Business Administration</h4>
+                  <p className="school">Niagara College</p>
+                  <p className="year">2015 - 2019</p>
                 </div>
               </div>
             </div>

@@ -2,35 +2,56 @@ import './Skills.scss';
 
 
 import React from "react";
-import { FaReact, FaNodeJs, FaJs, FaDatabase, FaGitAlt, FaDocker, FaAws, FaMicrochip, FaCube } from "react-icons/fa";
 import "./Skills.scss";
-
-const skillCategories = [
-  {
-    title: "Web Development",
-    skills: [
-      { name: "React.js", level: "95%", icon: <FaReact /> },
-      { name: "Node.js", level: "92%", icon: <FaNodeJs /> },
-      { name: "JavaScript", level: "98%", icon: <FaJs /> },
-    ],
-  },
-  {
-    title: "Other Skills",
-    skills: [
-      { name: "MongoDB", level: "90%", icon: <FaDatabase /> },
-      { name: "Git", level: "95%", icon: <FaGitAlt /> },
-      { name: "Docker", level: "88%", icon: <FaDocker /> },
-    ],
-  },
-  {
-    title: "In Progress",
-    skills: [
-      { name: "AWS", level: "60%", icon: <FaAws /> },
-      { name: "Machine Learning", level: "45%", icon: <FaMicrochip /> },
-      { name: "Three.js", level: "30%", icon: <FaCube /> },
-    ],
-  },
-];
+import {
+    FaHtml5,
+    FaCss3Alt,
+    FaJs,
+    FaReact,
+    FaNodeJs,
+    FaDatabase,
+    FaSass,
+    FaAws,
+    FaDocker,
+  } from "react-icons/fa";
+  import {
+    SiTypescript,
+    SiExpress,
+    SiNextdotjs,
+    SiKnex,
+    SiTailwindcss,
+    SiFastapi,
+    SiPostgresql,
+    SiMysql,
+    SiJson,
+    SiNginx
+  } from "react-icons/si";
+  import "./Skills.scss";
+  
+  const skillCategories = [
+    {
+      title: "Web Development",
+      skills: [
+        { name: "HTML", level: "Experienced", icon: <FaHtml5 /> },
+        { name: "CSS", level: "Experienced", icon: <FaCss3Alt /> },
+        { name: "JavaScript", level: "Experienced", icon: <FaJs /> },
+        { name: "TypeScript", level: "Intermediate", icon: <SiTypescript /> },
+        { name: "React.js", level: "Experienced", icon: <FaReact /> },
+        { name: "Node.js", level: "Experienced", icon: <FaNodeJs /> },
+        { name: "Express.js", level: "Experienced", icon: <SiExpress /> },
+        { name: "Next.js", level: "Intermediate", icon: <SiNextdotjs /> },
+        { name: "Knex.js", level: "Experienced", icon: <SiKnex /> },
+        { name: "Sass", level: "Experienced", icon: <FaSass /> },
+        { name: "TailwindCSS", level: "Intermediate", icon: <SiTailwindcss /> },
+        { name: "FastAPI", level: "Intermediate", icon: <SiFastapi /> },
+        { name: "PostgreSQL", level: "Intermediate", icon: <SiPostgresql /> },
+        { name: "MySQL", level: "Intermediate", icon: <SiMysql /> },
+        { name: "JSON", level: "Experienced", icon: <SiJson /> },
+        { name: "Nginx", level: "Basic", icon: <SiNginx /> },
+        { name: "AWS", level: "Intermediate", icon: <FaAws /> },
+      ],
+    },
+  ];
 
 const Skills = () => {
   return (
@@ -48,7 +69,7 @@ const Skills = () => {
                       <span className="icon">{skill.icon}</span>
                       <span className="skill-name">{skill.name}</span>
                     </div>
-                    <span className="skill-level">{skill.level}</span>
+                    {/* <span className="skill-level">{skill.level}</span> */}
                   </div>
                 ))}
               </div>
