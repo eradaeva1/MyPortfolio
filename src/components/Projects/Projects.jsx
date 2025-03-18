@@ -1,8 +1,8 @@
 
 import "./Projects.scss";
-import snaps from "../../../public/images/snaps.jpg";
-import warehouse from "../../../public/images/warehouse.jpg";
-import lensTracker from "../../../public/images/lenstracker1.png";
+import snaps from "/images/snaps.jpg";
+import warehouse from "/images/warehouse.jpg";
+import lensTracker from "/images/lenstracker1.png";
 
 
 import React, { useState, useEffect } from "react";
