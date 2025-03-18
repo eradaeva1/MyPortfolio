@@ -1,14 +1,24 @@
-
 import "./Projects.scss";
 // import snaps from "/images/snaps.jpg";
 // import warehouse from "/images/warehouse.jpg";
 // import lensTracker from "/images/lenstracker1.png";
 
-
 import React, { useState, useEffect } from "react";
-import { FaReact, FaNodeJs, FaDatabase, FaCode, FaServer } from "react-icons/fa";
-import { SiMysql, SiSass, SiExpress, SiJavascript, SiAxios, SiGithub } from "react-icons/si";
-
+import {
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+  FaCode,
+  FaServer,
+} from "react-icons/fa";
+import {
+  SiMysql,
+  SiSass,
+  SiExpress,
+  SiJavascript,
+  SiAxios,
+  SiGithub,
+} from "react-icons/si";
 
 const projects = [
   {
@@ -32,7 +42,8 @@ const projects = [
       - Cloud Storage – Securely stores preferences and schedules.  
       - Enhanced Security – JWT authentication ensures data protection.  
     `,
-    image: "https://lh3.googleusercontent.com/d/1a4bNrjk0WH_LuHUqYsfYcODszJOQCLdD=w1000",
+    image:
+      "https://lh3.googleusercontent.com/d/1a4bNrjk0WH_LuHUqYsfYcODszJOQCLdD=w1000",
     codeLink: "https://github.com/eradaeva1/lenstracker-elizaveta-radaeva",
   },
   {
@@ -53,7 +64,8 @@ const projects = [
       - User Roles & Permissions – Ensures access control and security.  
       - Data Analytics Dashboard – Provides insights into inventory trends.  
     `,
-    image: "https://lh3.googleusercontent.com/d/1Z1JFv9uwoXjEzm6oubR5JrAoBA5EfPEx=w1000",
+    image:
+      "https://lh3.googleusercontent.com/d/1Z1JFv9uwoXjEzm6oubR5JrAoBA5EfPEx=w1000",
   },
   {
     name: "Snaps - Photo Sharing Application",
@@ -75,11 +87,11 @@ const projects = [
       - RESTful API – Designed with Express.js and Axios for smooth data fetching.  
       - Responsive UI – Built with React, SCSS, and Flexbox for seamless display.  
     `,
-    image: "https://lh3.googleusercontent.com/d/1tBO4H2nUqUSnxy96I0LZjHHslp2Ccg2-=w1000",
+    image:
+      "https://lh3.googleusercontent.com/d/1tBO4H2nUqUSnxy96I0LZjHHslp2Ccg2-=w1000",
     codeLink: "https://github.com/eradaeva1/elizaveta-radaeva-snaps",
   },
 ];
-
 
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -102,9 +114,17 @@ function Projects() {
         <h2 className="projects__title">Featured Projects</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <div key={index} className="project-card" onClick={() => setSelectedProject(project)}>
+            <div
+              key={index}
+              className="project-card"
+              onClick={() => setSelectedProject(project)}
+            >
               <div className="image-overlay"></div>
-              <img src={project.image} alt={project.name} className="projects__img" />
+              <img
+                src={project.image}
+                alt={project.name}
+                className="projects__img"
+              />
               <div className="overlay">
                 <div className="content">
                   <h3 className="projects__name">{project.name}</h3>
@@ -126,8 +146,14 @@ function Projects() {
       {selectedProject && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={closeModal}>✕</button>
-            <img src={selectedProject.image} alt={selectedProject.name} className="modal-image" />
+            <button className="modal-close" onClick={closeModal}>
+              ✕
+            </button>
+            <img
+              src={selectedProject.image}
+              alt={selectedProject.name}
+              className="modal-image"
+            />
             <div className="modal-details">
               <h2 className="modal-title">{selectedProject.name}</h2>
               <p className="modal-description">
@@ -138,7 +164,12 @@ function Projects() {
                   </span>
                 ))}
               </p>
-              <a href={selectedProject.codeLink} target="_blank" rel="noopener noreferrer" className="modal-button">
+              <a
+                href={selectedProject.codeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="modal-button"
+              >
                 View Code
               </a>
             </div>
@@ -150,4 +181,3 @@ function Projects() {
 }
 
 export default Projects;
-

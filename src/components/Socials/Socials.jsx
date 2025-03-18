@@ -4,7 +4,7 @@ import "./Socials.scss"; // Import SCSS for styling
 function Socials() {
   const handleResumeDownload = () => {
     // Change this to the actual path of your resume file
-    const resumePath = "../../public/resume.pdf"
+    const resumePath = "../../public/resume.pdf";
     const link = document.createElement("a");
     link.href = resumePath;
     link.download = "resume.pdf";
@@ -27,7 +27,7 @@ function Socials() {
           </a>
 
           <button onClick={handleResumeDownload} className="btn-secondary">
-             Download CV
+            Download CV
           </button>
         </div>
 

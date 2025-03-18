@@ -34,10 +34,9 @@
       justify-content: space-between;
     }
 
-
     .content__me {
-font-weight: 500;
-    }    
+      font-weight: 500;
+    }
     .content {
       max-width: 40rem;
       margin-top: 8rem;
@@ -49,7 +48,6 @@ font-weight: 500;
       @media (min-width: 1268px) {
         margin-left: -40rem;
         margin-top: 7rem;
-        
       }
     }
 
@@ -93,7 +91,7 @@ font-weight: 500;
     }
   }
 
-  // Right-side image (scales only horizontally)
+  
   .hero__image {
     position: absolute;
     right: 0;
