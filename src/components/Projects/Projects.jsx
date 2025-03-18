@@ -1,4 +1,7 @@
 import './Projects.scss';
+import snaps from "../../assets/images/snaps.jpg";
+import warehouse from "../../assets/images/warehouse.jpg";
+import lensTracker from "../../assets/images/lenstracker1.png"
 
 
 
@@ -9,22 +12,35 @@ return (
   <div className="projects__container">
     <h2 className="projects__title">Featured Projects</h2>
     <div className="projects-grid">
-      <div className="project-card">
+    <div className="project-card">
         <img className="projects__img"
-          src="https://storage.googleapis.com/uxpilot-auth.appspot.com/113f5b275a-022f485bfe9d148627a6.png"
+          src={lensTracker}
           alt="modern web application dashboard interface design, minimal"
         />
         <div className="overlay">
           <div className="content">
-            <h3 className="projects__name">Analytics Dashboard</h3>
-            <p className="projects__tech">React, TypeScript, Tailwind CSS</p>
+            <h3 className="projects__name">LensTracker - Smart Contact Lens Manager with AI-Assistant</h3>
+            <p className="projects__tech">React, JavaScript, MySQL, SCSS</p>
             <span className="project__view">View Project <i className="fa-solid fa-arrow-right ml-2"></i></span>
           </div>
         </div>
       </div>
       <div className="project-card">
         <img className="projects__img"
-          src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b6922c6df5-6a334f1e25f3a796ba14.png"
+          src={warehouse}
+          alt="modern web application dashboard interface design, minimal"
+        />
+        <div className="overlay">
+          <div className="content">
+            <h3 className="projects__name">InStock - Inventory Management System</h3>
+            <p className="projects__tech">React, JavaScript, MySQL, Agile Development</p>
+            <span className="project__view">View Project <i className="fa-solid fa-arrow-right ml-2"></i></span>
+          </div>
+        </div>
+      </div>
+      <div className="project-card">
+        <img className="projects__img"
+          src={snaps}
           alt="e-commerce website design, minimal and modern"
         />
         <div className="overlay">

@@ -13,18 +13,18 @@ import {
     FaSass,
     FaAws,
     FaDocker,
+    FaGitAlt,
   } from "react-icons/fa";
   import {
     SiTypescript,
     SiExpress,
     SiNextdotjs,
-    SiKnex,
     SiTailwindcss,
     SiFastapi,
     SiPostgresql,
     SiMysql,
     SiJson,
-    SiNginx
+    SiNginx,
   } from "react-icons/si";
   import "./Skills.scss";
   
@@ -35,23 +35,33 @@ import {
         { name: "HTML", level: "Experienced", icon: <FaHtml5 /> },
         { name: "CSS", level: "Experienced", icon: <FaCss3Alt /> },
         { name: "JavaScript", level: "Experienced", icon: <FaJs /> },
-        { name: "TypeScript", level: "Intermediate", icon: <SiTypescript /> },
         { name: "React.js", level: "Experienced", icon: <FaReact /> },
         { name: "Node.js", level: "Experienced", icon: <FaNodeJs /> },
         { name: "Express.js", level: "Experienced", icon: <SiExpress /> },
-        { name: "Next.js", level: "Intermediate", icon: <SiNextdotjs /> },
-        { name: "Knex.js", level: "Experienced", icon: <SiKnex /> },
+        { name: "Knex.js", level: "Experienced", icon: <FaDatabase /> }, // Using FaDatabase as a fallback
         { name: "Sass", level: "Experienced", icon: <FaSass /> },
-        { name: "TailwindCSS", level: "Intermediate", icon: <SiTailwindcss /> },
         { name: "FastAPI", level: "Intermediate", icon: <SiFastapi /> },
-        { name: "PostgreSQL", level: "Intermediate", icon: <SiPostgresql /> },
         { name: "MySQL", level: "Intermediate", icon: <SiMysql /> },
         { name: "JSON", level: "Experienced", icon: <SiJson /> },
-        { name: "Nginx", level: "Basic", icon: <SiNginx /> },
+      ],
+    },
+    {
+      title: "Other Skills",
+      skills: [
+        { name: "Git", level: "Experienced", icon: <FaGitAlt /> },
+        { name: "Docker", level: "Intermediate", icon: <FaDocker /> },
+        { name: "AWS", level: "Intermediate", icon: <FaAws /> },
+      ],
+    },
+    {
+      title: "In Progress",
+      skills: [
+        { name: "Python", level: "Basic", icon: <SiNginx /> },
         { name: "AWS", level: "Intermediate", icon: <FaAws /> },
       ],
     },
   ];
+  
 
 const Skills = () => {
   return (

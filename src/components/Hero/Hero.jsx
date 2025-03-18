@@ -8,6 +8,7 @@ function Hero() {
           <section className="hero">
             <div className="hero__container">
               <div className="content">
+              <h2>Hi, I'm</h2>
                 <h1 className="content__title">Elizaveta Radaeva. </h1>
                 <p className="content__text">
                   Full-stack developer specializing in creating memorable and performant web applications. Crafting Digital Experiences
