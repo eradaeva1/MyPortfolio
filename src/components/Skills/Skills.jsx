@@ -1,67 +1,81 @@
-import './Skills.scss';
-
+import "./Skills.scss";
 
 import React from "react";
 import "./Skills.scss";
 import {
-    FaHtml5,
-    FaCss3Alt,
-    FaJs,
-    FaReact,
-    FaNodeJs,
-    FaDatabase,
-    FaSass,
-    FaAws,
-    FaDocker,
-    FaGitAlt,
-  } from "react-icons/fa";
-  import {
-    SiTypescript,
-    SiExpress,
-    SiNextdotjs,
-    SiTailwindcss,
-    SiFastapi,
-    SiPostgresql,
-    SiMysql,
-    SiJson,
-    SiNginx,
-  } from "react-icons/si";
-  import "./Skills.scss";
-  
-  const skillCategories = [
-    {
-      title: "Web Development",
-      skills: [
-        { name: "HTML", level: "Experienced", icon: <FaHtml5 /> },
-        { name: "CSS", level: "Experienced", icon: <FaCss3Alt /> },
-        { name: "JavaScript", level: "Experienced", icon: <FaJs /> },
-        { name: "React.js", level: "Experienced", icon: <FaReact /> },
-        { name: "Node.js", level: "Experienced", icon: <FaNodeJs /> },
-        { name: "Express.js", level: "Experienced", icon: <SiExpress /> },
-        { name: "Knex.js", level: "Experienced", icon: <FaDatabase /> }, // Using FaDatabase as a fallback
-        { name: "Sass", level: "Experienced", icon: <FaSass /> },
-        { name: "FastAPI", level: "Intermediate", icon: <SiFastapi /> },
-        { name: "MySQL", level: "Intermediate", icon: <SiMysql /> },
-        { name: "JSON", level: "Experienced", icon: <SiJson /> },
-      ],
-    },
-    {
-      title: "Other Skills",
-      skills: [
-        { name: "Git", level: "Experienced", icon: <FaGitAlt /> },
-        { name: "Docker", level: "Intermediate", icon: <FaDocker /> },
-        { name: "AWS", level: "Intermediate", icon: <FaAws /> },
-      ],
-    },
-    {
-      title: "In Progress",
-      skills: [
-        { name: "Python", level: "Basic", icon: <SiNginx /> },
-        { name: "AWS", level: "Intermediate", icon: <FaAws /> },
-      ],
-    },
-  ];
-  
+  FaReact,
+  FaJs,
+  FaNodeJs,
+  FaGitAlt,
+  FaDocker,
+  FaAws,
+  FaHtml5,
+  FaCss3Alt,
+  FaDatabase,
+  FaSass,
+  FaPython,
+  FaTerminal,
+} from "react-icons/fa";
+import {
+  SiExpress,
+  SiMysql,
+  SiJson,
+  SiJira,
+  SiFigma,
+  SiMiro,
+  SiFirebase,
+  SiTwilio,
+  SiHeroku,
+  SiNetlify,
+  SiOpenai,
+  SiJsonwebtokens,
+} from "react-icons/si";
+import { TbSettingsCog, TbActivityHeartbeat } from "react-icons/tb";
+
+const skillCategories = [
+  {
+    title: "Web Development",
+    skills: [
+      { name: "React.js", level: "Experienced", icon: <FaReact /> },
+      { name: "JavaScript", level: "Experienced", icon: <FaJs /> },
+      { name: "Node.js", level: "Experienced", icon: <FaNodeJs /> },
+      { name: "Express.js", level: "Experienced", icon: <SiExpress /> },
+      { name: "Knex.js", level: "Experienced", icon: <FaDatabase /> }, // Using FaDatabase as a fallback
+      { name: "Sass", level: "Experienced", icon: <FaSass /> },
+      { name: "HTML", level: "Experienced", icon: <FaHtml5 /> },
+      { name: "CSS", level: "Experienced", icon: <FaCss3Alt /> },
+      { name: "MySQL", level: "Intermediate", icon: <SiMysql /> },
+      { name: "JSON", level: "Experienced", icon: <SiJson /> },
+      
+    ],
+  },
+  {
+    title: "Other Skills",
+    skills: [
+      { name: "Git", level: "Experienced", icon: <FaGitAlt /> },
+      { name: "Bash", level: "Intermediate", icon: <FaTerminal /> },
+      { name: "Heroku", level: "Intermediate", icon: <SiHeroku /> },
+      { name: "Netlify", level: "Intermediate", icon: <SiNetlify /> },
+      { name: "OpenAI", level: "Intermediate", icon: <SiOpenai /> },
+      { name: "Agile", level: "Experienced", icon: <TbSettingsCog /> },
+      { name: "Jira", level: "Experienced", icon: <SiJira /> },
+      { name: "Figma", level: "Experienced", icon: <SiFigma /> },
+      { name: "Miro", level: "Intermediate", icon: <SiMiro /> },
+      
+    ],
+  },
+  {
+    title: "In Progress",
+    skills: [
+      { name: "Python", level: "Basic", icon: <FaPython /> },
+      { name: "AWS", level: "Intermediate", icon: <FaAws /> },
+      { name: "Firebase", level: "Intermediate", icon: <SiFirebase /> },
+      { name: "Twilio", level: "Intermediate", icon: <SiTwilio /> },
+      { name: "React Native", level: "Basic", icon: <FaReact /> },
+      { name: "JWT", level: "Experienced", icon: <SiJsonwebtokens /> },
+    ],
+  },
+];
 
 const Skills = () => {
   return (
