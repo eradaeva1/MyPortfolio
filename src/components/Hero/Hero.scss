@@ -2,7 +2,7 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixins" as *;
 .hero {
-  height: 85vh; // Full height for large screens
+  height: 90vh; // Full height for large screens
   position: relative;
   overflow: hidden;
   display: flex;
@@ -48,7 +48,7 @@ font-weight: 500;
 
       @media (min-width: 1268px) {
         margin-left: -40rem;
-        margin-top: 5.5rem;
+        margin-top: 7rem;
         
       }
     }

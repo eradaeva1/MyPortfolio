@@ -8,13 +8,14 @@ const scrollToSection = (id) => {
 function Hero() {
     return (
         <>
-          <section className="hero">
+          <section id="hero" className="hero">
         <div className="hero__container">
           <div className="content">
             <h2 className="content__me">Hi, I'm</h2>
             <h1 className="content__title">Elizaveta Radaeva.</h1>
+            <h4 className="content__text">Welcome to my Studio:</h4>
             <p className="content__text">
-              Full-stack developer specializing in creating memorable and
+              I am a full-stack developer specializing in creating memorable and
               performant web applications. I Craft Digital Experiences with Clean UI and Business Focus.
             </p>
             <div className="btns">

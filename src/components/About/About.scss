@@ -5,7 +5,7 @@
 
 
 .about-section {
-  padding: 6rem 2rem;
+  padding: 6rem 3em;
   background-color: #f3f4f6; // Light background
   color: #374151;
   overflow: hidden;
@@ -65,17 +65,7 @@
     transform: translateX(-20px);
     animation: fadeInLeft 1s ease-out forwards;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: -8px;
-      top: 5px;
-      width: 15px;
-      height: 15px;
-      background-color: #d946ef;
-      border-radius: 50%;
-    }
-
+    
     .degree {
       font-size: 1.5rem;
       font-weight: bold;

@@ -4,10 +4,10 @@ import "./Socials.scss"; // Import SCSS for styling
 function Socials() {
   const handleResumeDownload = () => {
     // Change this to the actual path of your resume file
-    const resumePath = "/assets/resume.pdf";
+    const resumePath = "../../public/resume.pdf"
     const link = document.createElement("a");
     link.href = resumePath;
-    link.download = "Elizaveta_Radaeva_Resume.pdf";
+    link.download = "resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -22,7 +22,7 @@ function Socials() {
         </p>
 
         <div className="contact-buttons">
-          <a href="mailto:your.email@example.com" className="btn-primary">
+          <a href="mailto:radaeva.liza98@gmail.com" className="btn-primary">
             <Mail size={20} className="btn-icon" /> Get in Touch
           </a>
 
