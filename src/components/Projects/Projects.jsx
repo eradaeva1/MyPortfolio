@@ -1,8 +1,8 @@
 
 import "./Projects.scss";
-import snaps from "/images/snaps.jpg";
-import warehouse from "/images/warehouse.jpg";
-import lensTracker from "/images/lenstracker1.png";
+// import snaps from "/images/snaps.jpg";
+// import warehouse from "/images/warehouse.jpg";
+// import lensTracker from "/images/lenstracker1.png";
 
 
 import React, { useState, useEffect } from "react";
@@ -29,10 +29,10 @@ const projects = [
       - Personalized Alerts – Custom notifications for different lens types.  
       - AI Chatbot Assistance – Instant help for lens care.  
       - User-Friendly Dashboard – Easily track lens usage.  
-      - Cloud Storage– Securely stores preferences and schedules.  
+      - Cloud Storage – Securely stores preferences and schedules.  
       - Enhanced Security – JWT authentication ensures data protection.  
     `,
-    image: lensTracker,
+    image: "https://lh3.googleusercontent.com/d/1a4bNrjk0WH_LuHUqYsfYcODszJOQCLdD=w1000",
     codeLink: "https://github.com/eradaeva1/lenstracker-elizaveta-radaeva",
   },
   {
@@ -48,12 +48,12 @@ const projects = [
       InStock is a scalable inventory management system designed for a Fortune 500 client.  
       Key features include:  
 
-      - Real-time Stock Updates  Prevents inventory mismanagement.  
+      - Real-time Stock Updates – Prevents inventory mismanagement.  
       - Barcode Scanning – Quick and easy product tracking.  
       - User Roles & Permissions – Ensures access control and security.  
       - Data Analytics Dashboard – Provides insights into inventory trends.  
     `,
-    image: warehouse,
+    image: "https://lh3.googleusercontent.com/d/1Z1JFv9uwoXjEzm6oubR5JrAoBA5EfPEx=w1000",
   },
   {
     name: "Snaps - Photo Sharing Application",
@@ -75,10 +75,11 @@ const projects = [
       - RESTful API – Designed with Express.js and Axios for smooth data fetching.  
       - Responsive UI – Built with React, SCSS, and Flexbox for seamless display.  
     `,
-    image: snaps,
+    image: "https://lh3.googleusercontent.com/d/1tBO4H2nUqUSnxy96I0LZjHHslp2Ccg2-=w1000",
     codeLink: "https://github.com/eradaeva1/elizaveta-radaeva-snaps",
   },
 ];
+
 
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
