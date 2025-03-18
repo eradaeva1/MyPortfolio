@@ -1,16 +1,13 @@
-import './Footer.scss';
-
-
+import "./Footer.scss";
 
 function Footer() {
-return (
-    
-<footer className="footer">
+  return (
+    <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-brand">
-          <a href="#hero">
-            <h3 className="footer-title">dev.studio</h3>
+            <a href="#hero">
+              <h3 className="footer-title">dev.studio</h3>
             </a>
             <p className="footer-description">
               Creating digital experiences that matter
@@ -36,5 +33,4 @@ return (
   );
 }
 
-    
 export default Footer;

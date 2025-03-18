@@ -2,63 +2,6 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixins" as *;
 
-
-// .skills-section {
-//     padding: 5rem 1.5rem;
-//     background-color: #f9fafb;
-//   margin-top: -4rem;
-//   }
-  
-//   .skills-container {
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     text-align: center;
-//   }
-  
-//   .skills-title {
-//     font-size: 2.5rem;
-//     font-weight: bold;
-//     margin-bottom: 3rem;
-//     color: #111827;
-//   }
-  
-//   .skills-grid {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     gap: 2rem;
-//   }
-  
-//   .skill-card {
-//     background-color: #fff;
-//     padding: 2rem;
-//     border-radius: 1rem;
-//     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-//   }
-  
-//   .skill-icon {
-//     font-size: 2.5rem;
-//     color: #d946ef;
-//     margin-bottom: 1rem;
-//   }
-  
-//   .skill-title {
-//     font-size: 1.25rem;
-//     font-weight: bold;
-//     margin-bottom: 0.5rem;
-//     color: #111827;
-//   }
-  
-//   .skill-description {
-//     color: #4b5563;
-//   }
-  
-//   /* Responsive for medium screens */
-//   @media (min-width: 768px) {
-//     .skills-grid {
-//       grid-template-columns: repeat(4, 1fr);
-//     }
-//   }
-
 .skills-section {
   padding: 7rem 2rem 9rem;
   background-color: #ffffff;

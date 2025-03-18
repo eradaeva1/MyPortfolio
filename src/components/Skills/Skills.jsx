@@ -46,7 +46,6 @@ const skillCategories = [
       { name: "CSS", level: "Experienced", icon: <FaCss3Alt /> },
       { name: "MySQL", level: "Intermediate", icon: <SiMysql /> },
       { name: "JSON", level: "Experienced", icon: <SiJson /> },
-      
     ],
   },
   {
@@ -61,7 +60,6 @@ const skillCategories = [
       { name: "Jira", level: "Experienced", icon: <SiJira /> },
       { name: "Figma", level: "Experienced", icon: <SiFigma /> },
       { name: "Miro", level: "Intermediate", icon: <SiMiro /> },
-      
     ],
   },
   {
@@ -93,7 +91,6 @@ const Skills = () => {
                       <span className="icon">{skill.icon}</span>
                       <span className="skill-name">{skill.name}</span>
                     </div>
-                    {/* <span className="skill-level">{skill.level}</span> */}
                   </div>
                 ))}
               </div>

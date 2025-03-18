@@ -2,8 +2,6 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/global" as *;
 
-
-
 .about-section {
   padding: 6rem 3em;
   background-color: #f3f4f6; // Light background
@@ -65,7 +63,6 @@
     transform: translateX(-20px);
     animation: fadeInLeft 1s ease-out forwards;
 
-    
     .degree {
       font-size: 1.5rem;
       font-weight: bold;
@@ -137,121 +134,3 @@
     transform: translateX(0);
   }
 }
-
-
-// #about-section {
-//   padding: 6rem 0;
-//   opacity: 0;
-//   transform: translateY(50px);
-//   transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-//   position: relative;
-//   z-index: 1;
-  
-//   background: linear-gradient(to right, rgba(240, 171, 252, 0.8), transparent),
-//               url('your-image-url.jpg');  /* Replace with your actual image URL */
-//   background-size: cover;
-//   background-position: center;
-
-//   &.about-visible {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
-
-// .about-container {
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   padding: 0 1.5rem;
-//   position: relative;
-//   z-index: 10;
-// }
-
-// .about-content {
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   gap: 4rem;
-
-//   @media (min-width: 768px) {
-//     grid-template-columns: 1fr 1fr;
-//     align-items: center;
-    
-//     .about-text-content {
-//       order: 1;
-//     }
-
-//     .about-photo {
-//       order: 2;
-//       max-width: 100%;
-//       height: auto;
-//       border-radius: 0;  /* No frame around the image */
-//     }
-//   }
-// }
-
-// .about-text-content {
-//   max-width: 600px;
-
-//   .about-title {
-//     font-size: 2.5rem;
-//     font-weight: bold;
-//     color: #111827;
-//     margin-bottom: 1.5rem;
-//   }
-
-//   .about-description {
-//     color: #4b5563;
-//     margin-bottom: 1.5rem;
-//   }
-
-//   .about-skills-grid {
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     gap: 1.5rem;
-//     margin-bottom: 2rem;
-
-//     .about-skill-card {
-//       background-color: #f9fafb;
-//       padding: 1.5rem;
-//       border-radius: 1rem;
-//       text-align: center;
-//       transition: transform 0.3s ease;
-
-//       &:hover {
-//         transform: translateY(-5px);
-//         background-color: #f0f0f5;
-//       }
-
-//       .about-icon {
-//         font-size: 2rem;
-//         margin-bottom: 1rem;
-//         color: #d946ef;
-//       }
-
-//       .about-skill-title {
-//         font-size: 1.25rem;
-//         font-weight: bold;
-//         margin-bottom: 0.5rem;
-//         color: #111827;
-//       }
-
-//       .about-skill-text {
-//         color: #4b5563;
-//       }
-//     }
-//   }
-
-//   .about-cta {
-//     color: #d946ef;
-//     display: inline-flex;
-//     align-items: center;
-//     transition: color 0.3s ease;
-
-//     &:hover {
-//       color: #9333ea;
-//     }
-
-//     i {
-//       margin-left: 0.5rem;
-//     }
-//   }
-// }
